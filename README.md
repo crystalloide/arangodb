@@ -117,6 +117,11 @@ Notre environnement de démonstration contiendra 1 noeud pour le moment :
 
 Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel accessible à partir d'un simple navigateur web, à des fins de développement et de formation. 
 
+#### IMPORTANT : Le serveur Ubuntu en x86_64 doit avoir la fonctionnalité AVX activée. C’est impératif pour arangodb depuis la version 3.9 incluse.
+
+#### Pour les versions d’arangodb version 3.8.9 ou avant, il n’est pas nécessaire d’avoir la virtualization imbriquée disponible
+
+
     git clone https://github.com/crystalloide/arangodb
 
 
