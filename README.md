@@ -39,7 +39,7 @@ Pour les plus impatients :
 
   L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
 
-Key Features of ArangoDB
+Principales caractéristiques d'ArangoDB :
 ------------------------
 
 **Native Graph** - Stockez à la fois les données et les relations, pour des requêtes plus rapides, même avec plusieurs niveaux de jointures et des informations plus approfondies qui ne sont tout simplement pas possibles avec les systèmes de bases de données relationnelles et documentaires traditionnels.
@@ -103,3 +103,47 @@ Pour rentrer en contact :
   [https://twitter.com/arangodb](https://twitter.com/arangodb)
 
 - En savoir plus sur notre communauté : [https://www.arangodb.com/community](https://www.arangodb.com/community/)
+
+
+
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+
+
+# Pour tester rapidement ArangoDB dans un environnement virtualisé "Gitpod"
+
+Notre environnement de démonstration contient 1 noeud pour le momentt : 
+
+
+## Rappel pour retrouver les environnements éventuellement précédemment instanciés dans Gitpod : [ https://gitpod.io/workspaces ](https://gitpod.io/workspaces)
+
+Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel accessible à partir d'un simple navigateur web, à des fins de développement et de formation. 
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/arangodb
+)
+
+## 1°) On lance ArangoDB dans un conteneur Docker : 
+
+      docker run -e ARANGO_ROOT_PASSWORD=test123 -p 8529:8529 -d arangodb
+
+  L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
+
+## cet URL est à adapter en fonction du nom de l'espace Gitpod instancié : 
+
+###	2°) Pour lister l'image récupérée  :
+
+    docker images
+
+### 3°) Attendre quelques minutes que les conteneurs démarrent
+
+### 4°) Affichage des conteneurs et vérification qu'ils sont bien en cours d'exécution : 
+
+    docker ps -a 
+
+### bon test :-)
+
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+______________________________________________________________________________________________________________
+
