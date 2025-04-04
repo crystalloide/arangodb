@@ -111,17 +111,14 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 
 
-### Pour tester rapidement ArangoDB dans un environnement virtualisé "Gitpod"
+### Pour tester rapidement ArangoDB dans un environnement de type VM Ubuntu :
 
-Notre environnement de démonstration contient 1 noeud pour le momentt : 
-
-
-#### Rappel pour retrouver les environnements éventuellement précédemment instanciés dans Gitpod : [ https://gitpod.io/workspaces ](https://gitpod.io/workspaces)
+Notre environnement de démonstration contiendra 1 noeud pour le moment : 
 
 Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel accessible à partir d'un simple navigateur web, à des fins de développement et de formation. 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/arangodb
-)
+    git clone https://github.com/crystalloide/arangodb
+
 
 #### 1°) On lance ArangoDB dans un conteneur Docker : 
 
@@ -129,7 +126,6 @@ Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel 
 
   L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
 
-#### cet URL est à adapter en fonction du nom de l'espace Gitpod instancié : 
 
 ####	2°) Pour lister l'image récupérée  :
 
