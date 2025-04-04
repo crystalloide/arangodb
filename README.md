@@ -132,7 +132,7 @@ Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel 
   L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
 
 
-####	2°) Pour lister l'image récupérée  :
+####	2°) Pour lister l'image récupérée  : (pour info, c'est arangoDB 3.9 au 04-04-2025)
 
     docker images
 
