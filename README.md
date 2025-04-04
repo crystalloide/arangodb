@@ -7,16 +7,12 @@
 ArangoDB
 ========
 
-ArangoDB is a scalable graph database system to drive value from connected data,
-faster. Native graphs, an integrated search engine, and JSON support, via a
-single query language. ArangoDB runs on-prem, in the cloud – anywhere.
+ArangoDB est un système de base de données graphique évolutif permettant de valoriser plus rapidement les données connectées. Graphes natifs, moteur de recherche intégré et prise en charge JSON via un langage de requête unique. ArangoDB fonctionne sur site, dans le cloud, partout.
 
 ArangoDB Cloud Service
 ----------------------
 
-The [ArangoGraph Insights Platform](https://cloud.arangodb.com/home) is the
-simplest way to run ArangoDB. You can create deployments on all major cloud
-providers in many regions with ease.
+La plateforme ArangoGraph Insights  [ArangoGraph Insights Platform](https://cloud.arangodb.com/home) est le moyen le plus simple d'exécuter ArangoDB. Elle permet de créer facilement des déploiements sur tous les principaux fournisseurs de cloud dans de nombreuses régions.
 
 Getting Started
 ---------------
