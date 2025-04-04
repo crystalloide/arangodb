@@ -4,19 +4,21 @@
   <img alt="Two stylized avocado halves and the product name." src="https://user-images.githubusercontent.com/7819991/218697980-26ffd7af-cf29-4365-8a5d-504b850fc6b1.png" width="638" height="105">
 </picture>
 
-ArangoDB
+ArangoDB :
 ========
 
 ArangoDB est un système de base de données graphique évolutif permettant de valoriser plus rapidement les données connectées. 
+
 Graphes natifs, moteur de recherche intégré et prise en charge JSON via un langage de requête unique. ArangoDB fonctionne sur site, dans le cloud, partout.
 
-ArangoDB Cloud Service
+ArangoDB Cloud Service :
 ----------------------
 
 La plateforme ArangoGraph Insights  [ArangoGraph Insights Platform](https://cloud.arangodb.com/home) est le moyen le plus simple d'exécuter ArangoDB. 
+
 Elle permet de créer facilement des déploiements sur tous les principaux fournisseurs de cloud dans de nombreuses régions.
 
-Getting Started
+Pour démarrer :
 ---------------
 
 - [ArangoDB University](https://university.arangodb.com/)
@@ -24,102 +26,80 @@ Getting Started
 - [Training Center](https://www.arangodb.com/learn/)
 - [Documentation](https://docs.arangodb.com/)
 
-For the impatient:
+Pour les plus impatients :
 
-- Test ArangoDB in the cloud with [ArangoGraph](https://cloud.arangodb.com/home) for free.
+- Test gratuit d'ArangoDB dans le cloud avec [ArangoGraph](https://cloud.arangodb.com/home)
 
-- Alternatively, [download](https://www.arangodb.com/download) and install ArangoDB.
-  Start the server `arangod` if the installer did not do it for you.
+- Alternative en local : [Télécharger ici](https://www.arangodb.com/download) et installer ArangoDB.
+   Démarrez le serveur avec 'arangod' si le programme d'installation ne l'a pas déjà fait.
 
-  Or start ArangoDB in a Docker container:
+  Ou démarrez ArangoDB dans un conteneur Docker : 
 
       docker run -e ARANGO_ROOT_PASSWORD=test123 -p 8529:8529 -d arangodb
 
-  Then point your browser to `http://127.0.0.1:8529/`.
+  L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
 
 Key Features of ArangoDB
 ------------------------
 
-**Native Graph** - Store both data and relationships, for faster queries even
-with multiple levels of joins and deeper insights that simply aren't possible
-with traditional relational and document database systems.
+**Native Graph** - Stockez à la fois les données et les relations, pour des requêtes plus rapides, même avec plusieurs niveaux de jointures et des informations plus approfondies qui ne sont tout simplement pas possibles avec les systèmes de bases de données relationnelles et documentaires traditionnels.
 
-**Document Store** - Every node in your graph is a JSON document:
-flexible, extensible, and easily imported from your existing document database.
+**Document Store** - Chaque nœud de votre graphique est un document JSON : flexible, extensible et facilement importé à partir de votre base de données de documents existante.
 
-**ArangoSearch** - Natively integrated cross-platform indexing, text-search and
-ranking engine for information retrieval, optimized for speed and memory.
+**ArangoSearch** - Moteur d'indexation, de recherche de texte et de classement multiplateforme intégré nativement pour la recherche d'informations, optimisé pour la vitesse et la mémoire.
 
-ArangoDB is available in a free and open-source **Community Edition**, as well
-as a commercial **Enterprise Edition** with additional features.
+ArangoDB est disponible dans une édition communautaire gratuite et open source **Community Edition**, ainsi que dans une édition d'entreprise commerciale avec des fonctionnalités supplémentaires **Enterprise Edition**
 
-### Community Edition features
+### Fonctionnalités de l'édition communautaire
 
-- **Horizontal scalability**: Seamlessly shard your data across multiple machines.
-- **High availability** and **resilience**: Replicate data to multiple cluster
-  nodes, with automatic failover.
-- **Flexible data modeling**: Model your data as combination of key-value pairs,
-  documents, and graphs as you see fit for your application.
-- Work **schema-free** or use **schema validation** for data consistency.
-  Store any type of data - date/time, geo-spatial, text, nested.
-- **Powerful query language** (_AQL_) to retrieve and modify data - from simple
-  CRUD operations, over complex filters and aggregations, all the way to joins,
-  graphs, and ranked full-text search.
-- **Transactions**: Run queries on multiple documents or collections with
-  optional transactional consistency and isolation.
-- **Data-centric microservices**: Unify your data storage logic, reduce network
-  overhead, and secure sensitive data with the _ArangoDB Foxx_ JavaScript framework.
-- **Fast access to your data**: Fine-tune your queries with a variety of index
-  types for optimal performance. ArangoDB is written in C++ and can handle even
-  very large datasets efficiently.
-- Easy to use **web interface** and **command-line tools** for interaction
-  with the server.
+- **Horizontal scalability**: Évolutivité horizontale : répartissez vos données de manière transparente sur plusieurs machines.
+- **High availability** and **resilience**: Haute disponibilité et résilience : répliquez les données sur plusieurs nœuds de cluster, avec basculement automatique.
+- **Flexible data modeling**: Modélisation de données flexible : modélisez vos données sous forme de combinaison de paires clé-valeur, de documents et de graphiques selon vos besoins pour votre application.
+- Work **schema-free** or use **schema validation** for data consistency. Travaillez sans schéma ou utilisez la validation de schéma pour la cohérence des données. Stockez tout type de données : date/heure, données géospatiales, texte, imbriquées.
+- **Powerful query language** (_AQL_) Langage de requête puissant ( AQL ) pour récupérer et modifier des données - des opérations CRUD simples, en passant par des filtres et des agrégations complexes, jusqu'aux jointures, aux graphiques et à la recherche en texte intégral classée.
+- **Transactions**: exécutez des requêtes sur plusieurs documents ou collections avec une cohérence et une isolation transactionnelles facultatives..
+- **Data-centric microservices**: Microservices centrés sur les données : unifiez votre logique de stockage de données, réduisez la surcharge du réseau et sécurisez les données sensibles avec le framework JavaScript ArangoDB Foxx .
+- **Fast access to your data**: Accès rapide à vos données : Affinez vos requêtes grâce à différents types d'index pour des performances optimales. ArangoDB est écrit en C++ et peut gérer efficacement des ensembles de données très volumineux.
+- Easy to use **web interface** and **command-line tools** for interaction with the server. Interface Web facile à utiliser et outils de ligne de commande pour l'interaction avec le serveur.
 
-### Enterprise Edition features
+### Fonctionnalités de l'édition Entreprise
 
-Focus on solving enterprise-scale problems for mission critical workloads using
-secure graph data. The Enterprise Edition has all the features of the
-Community Edition and offers additional features for performance, compliance,
-and security, as well as further query capabilities.
+Concentrez-vous sur la résolution des problèmes d'entreprise pour les charges de travail critiques grâce à des données graphiques sécurisées. 
 
-- Smartly shard and replicate graphs and datasets with features like
-  **EnterpriseGraphs**, **SmartGraphs**, and **SmartJoins** for lightning fast
-  query execution.
-- Combine the performance of a single server with the resilience of a cluster
-  setup using **OneShard** deployments.
-- Increase fault tolerance with **Datacenter-to-Datacenter Replication** and
-  and create incremental **Hot Backups** without downtime.
-- Enable highly secure work with **Encryption 360**, enhanced **Data Masking**, 
-  and detailed **Auditing**.
-- Perform **parallel graph traversals**.
-- Use ArangoSearch **search highlighting** and **nested search** for advanced
-  information retrieval.
+L'édition Entreprise reprend toutes les fonctionnalités de l'édition Communauté et offre des fonctionnalités supplémentaires en matière de performances, de conformité et de sécurité, ainsi que des capacités de requêtes étendues.
 
-Latest Release
+- Smartly shard and replicate graphs and datasets with features like  **EnterpriseGraphs**, **SmartGraphs**, and **SmartJoins** for lightning fast query execution. Divisez et répliquez intelligemment des graphiques et des ensembles de données avec des fonctionnalités telles que EnterpriseGraphs , SmartGraphs et SmartJoins pour une exécution de requêtes ultra-rapide.
+- Combine the performance of a single server with the resilience of a cluster setup using **OneShard** deployments. Combinez les performances d’un serveur unique avec la résilience d’une configuration en cluster à l’aide des déploiements OneShard .
+- Increase fault tolerance with **Datacenter-to-Datacenter Replication** and create incremental **Hot Backups** without downtime. Augmentez la tolérance aux pannes grâce à la réplication de Datacenter à Datacenter et créez des sauvegardes à chaud incrémentielles sans temps d'arrêt.
+- Enable highly secure work with **Encryption 360**, enhanced **Data Masking**, and detailed **Auditing**. Activez un travail hautement sécurisé avec Encryption 360 , le masquage des données amélioré et l'audit détaillé .
+- Perform **parallel graph traversals**. Effectuer des parcours de graphes parallèles .
+- Use ArangoSearch **search highlighting** and **nested search** for advanced information retrieval. Utilisez la mise en évidence de la recherche et la recherche imbriquée d'ArangoSearch pour une recherche d'informations avancée.
+
+Dernière Version disponible ici :
 --------------
 
-Packages for all supported platforms can be downloaded from
+Les packages pour toutes les plates-formes prises en charge peuvent être téléchargés ici :
 <https://www.arangodb.com/download/>.
 
-For what's new in ArangoDB, see the Release Notes in the
+Pour connaître les nouveautés d'ArangoDB, consultez les notes de publication ici : 
 [Documentation](https://docs.arangodb.com/).
 
-Stay in Contact
+Pour rentrer en contact :
 ---------------
 
-- Please use GitHub for feature requests and bug reports:
+- Veuillez utiliser GitHub pour les demandes de fonctionnalités et les rapports de bogues :
   [https://github.com/arangodb/arangodb/issues](https://github.com/arangodb/arangodb/issues)
 
-- Ask questions about AQL, usage scenarios, etc. on StackOverflow:
+- Pour posez vos questions sur AQL, les scénarios d'utilisation, etc. sur StackOverflow :
   [https://stackoverflow.com/questions/tagged/arangodb](https://stackoverflow.com/questions/tagged/arangodb)
 
-- Chat with the community and the developers on Slack:
+- Discutez avec la communauté et les développeurs sur Slack : 
   [https://arangodb-community.slack.com/](https://arangodb-community.slack.com/)
 
-- Learn more about ArangoDB with our YouTube channel: 
+- Apprenez-en plus sur ArangoDB avec notre chaîne YouTube : 
   [https://www.youtube.com/@ArangoDB](https://www.youtube.com/@ArangoDB)
 
-- Follow us on Twitter to stay up to date:
+- Suivez-nous sur X pour rester à jour :
   [https://twitter.com/arangodb](https://twitter.com/arangodb)
 
-- Find out more about our community: [https://www.arangodb.com/community](https://www.arangodb.com/community/)
+- En savoir plus sur notre communauté : [https://www.arangodb.com/community](https://www.arangodb.com/community/)
