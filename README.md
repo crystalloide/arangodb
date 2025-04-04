@@ -62,7 +62,7 @@ ArangoDB est disponible dans une édition communautaire gratuite et open source 
 - **Fast access to your data**: Accès rapide à vos données : Affinez vos requêtes grâce à différents types d'index pour des performances optimales. ArangoDB est écrit en C++ et peut gérer efficacement des ensembles de données très volumineux.
 - Easy to use **web interface** and **command-line tools** for interaction with the server. Interface Web facile à utiliser et outils de ligne de commande pour l'interaction avec le serveur.
 
-### Fonctionnalités de l'édition Entreprise
+### Fonctionnalités de l'édition Entreprise :
 
 Concentrez-vous sur la résolution des problèmes d'entreprise pour les charges de travail critiques grâce à des données graphiques sécurisées. 
 
@@ -111,37 +111,37 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 
 
-# Pour tester rapidement ArangoDB dans un environnement virtualisé "Gitpod"
+### Pour tester rapidement ArangoDB dans un environnement virtualisé "Gitpod"
 
 Notre environnement de démonstration contient 1 noeud pour le momentt : 
 
 
-## Rappel pour retrouver les environnements éventuellement précédemment instanciés dans Gitpod : [ https://gitpod.io/workspaces ](https://gitpod.io/workspaces)
+#### Rappel pour retrouver les environnements éventuellement précédemment instanciés dans Gitpod : [ https://gitpod.io/workspaces ](https://gitpod.io/workspaces)
 
 Nous allons déployer un conteneur docker ArangoDB sur un environnement virtuel accessible à partir d'un simple navigateur web, à des fins de développement et de formation. 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/crystalloide/arangodb
 )
 
-## 1°) On lance ArangoDB dans un conteneur Docker : 
+#### 1°) On lance ArangoDB dans un conteneur Docker : 
 
       docker run -e ARANGO_ROOT_PASSWORD=test123 -p 8529:8529 -d arangodb
 
   L'accès UI se fait ensuite avec un navigateur sur l'URL `http://127.0.0.1:8529/`
 
-## cet URL est à adapter en fonction du nom de l'espace Gitpod instancié : 
+#### cet URL est à adapter en fonction du nom de l'espace Gitpod instancié : 
 
-###	2°) Pour lister l'image récupérée  :
+####	2°) Pour lister l'image récupérée  :
 
     docker images
 
-### 3°) Attendre quelques minutes que les conteneurs démarrent
+#### 3°) Attendre quelques minutes que les conteneurs démarrent
 
-### 4°) Affichage des conteneurs et vérification qu'ils sont bien en cours d'exécution : 
+#### 4°) Affichage des conteneurs et vérification qu'ils sont bien en cours d'exécution : 
 
     docker ps -a 
 
-### bon test :-)
+#### bon test :-)
 
 ______________________________________________________________________________________________________________
 ______________________________________________________________________________________________________________
